@@ -35,7 +35,7 @@ random.array(arr);         // -> returns a random element in the specified array
 - Returns **a random integer** between `min` and `max`.
 ### `float(min: number, max: number): number`
 - Returns **a random float** between `min` and `max`.
-### `string(length: number, type: 'latin' | 'cyrillic'): string`
+### `string(length: number, type: 'latin' | 'cyrillic' | 'greek'): string`
 - Returns **a random string** with specified `length` and `type`.
 ### `boolean(): boolean`
 - Returns **a random boolean**.
@@ -45,3 +45,5 @@ random.array(arr);         // -> returns a random element in the specified array
 # 📜 Changelog
 ## 0.1.0
 - Initial Version
+## 0.2.0
+- Add: Greek to string function

@@ -35,11 +35,14 @@ describe('Random class', () => {
   test('Should output random string with specified length', () => {
     const result1: string = random.string(30, 'latin');
     const result2: string = random.string(40, 'cyrillic');
+    const result3: string = random.string(50, 'greek');
 
     console.log(result1);
     console.log(result2);
+    console.log(result3);
     expect(result1.length).toBe(30);
     expect(result2.length).toBe(40);
+    expect(result3.length).toBe(50);
   });
 
   test('Should output random boolean', () => {

@@ -25,13 +25,13 @@ export class Random {
    * Returns **a random string** with specified `length` and `type`.
    *
    * @param {number} length - String length.
-   * @param {'latin' | 'cyrillic'} type - String type.
+   * @param {'latin' | 'cyrillic' | 'greek'} type - String type.
    * @returns {string} - Generated string.
    */
-  string(length: number, type: 'latin' | 'cyrillic'): string {
+  string(length: number, type: 'latin' | 'cyrillic' | 'greek'): string {
     let result: string = '';
 
-    const charSets: Record<'latin' | 'cyrillic', string[]> = {
+    const charSets: Record<'latin' | 'cyrillic' | 'greek', string[]> = {
       latin: [
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
@@ -39,6 +39,10 @@ export class Random {
       cyrillic: [
         'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я',
         'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я'
+      ],
+      greek: [
+        'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'ς', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω',
+        'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π', 'Ρ', 'Σ'     , 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω'
       ]
     }
 
