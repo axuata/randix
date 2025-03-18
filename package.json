@@ -1,10 +1,10 @@
 {
-  "name": "app_name",
+  "name": "@axuata/randix",
   "version": "0.1.0",
-  "description": "app_description",
-  "author": "author name",
+  "description": "🎲 Lightweight Random Library",
+  "author": "Axuata",
   "license": "MIT",
-  "repository": "https://github.com/your/repository",
+  "repository": "https://github.com/axuata/randix",
   "engines": {
     "node": ">=18.0.0"
   },
@@ -30,5 +30,5 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "keywords": []
+  "keywords": ["random", "utility", "typescript", "randomizer"]
 }
